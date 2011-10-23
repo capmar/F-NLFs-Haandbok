@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+\usepackage[norsk]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}	%input encoding
+\usepackage{graphicx}		%graphics
+\usepackage[space]{grffile}	%graphic paths wih spacing
+\usepackage{textcomp}		%greater than and less than available in text mode
+
+%\usepackage{titlesec}		%partmark
+\usepackage{tocloft}		%adjust width of section number in TOC
+\usepackage{fancyhdr}		%custom header/footer
+\usepackage{hyperref}		%hyperref table of contents
+
+\pagestyle{fancy}
+\lhead{Materiellhåndbok F/NLF}
+%\chead{\parttitle}
+\rhead{Kapittel \thepart\ Side \thepage}
+\lfoot{Versjon nr: 1.2}
+\cfoot{Gyldig fra 01.04.05}
+%\rfoot{\today}
+
+\author{Fallskjermseksjonen/NLF}
+\title{FNLF Materiellhåndbok}
+\date{\today}
+
+\setcounter{tocdepth}{2}	%table of contents depth
+\setcounter{secnumdepth}{4}	%section numbering depth
+%\setcounter{section}{505}	%initial section counter
+
+%http://tex.stackexchange.com/questions/24745/why-does-setlength-using-tocloft-causes-strange-alignment-in-toc
+\setlength{\cftsecnumwidth}{3em}	% Set numwidth of section
+\setlength{\cftsubsecnumwidth}{4.6em}	% Make subsection numwidth the same as section
+\setlength{\cftsubsecindent}{\cftsecnumwidth}	% Make subsection indent the same as section
+%\setlength{\cftsecnumwidth}{1.5em}	% Set numwidth of section
+%\setlength{\cftsubsecnumwidth}{2.3em}	% Make subsection numwidth the same as section
+%\setlength{\cftsubsecindent}{1.5em}	% Make subsection indent the same as section
+
+%\includeonly{Seletoey}
+
+\begin{document}
+
+	\maketitle
+	\tableofcontents
+	
+	%\include{Innledning}
+	%\include{Kontroll_og_Vedlikehold}
+	%\include{Seletoey}
+	%\include{Reserveskjermer}
+	%\include{Hovedskjermer}
+	\include{Elevutstyr}
+	%\include{Noedaapnere_og_Instrumenter}
+	
+\end{document}
